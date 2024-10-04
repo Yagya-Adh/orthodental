@@ -1,4 +1,4 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./app/pages/DefaultLayout";
 import NotFound from "./app/pages/NotFound";
 import HomePage from "./app/pages/home/HomePage";
@@ -8,7 +8,6 @@ import EducationPage from "./app/pages/education/EducationPage";
 import EventsPage from "./app/pages/events/EventsPage";
 import ShopPage from "./app/pages/shop/ShopPage";
 import SingleShopPage from "./app/pages/shop/SingleShopPage";
-import SinglePage from "./app/components/singlepagelayout/SinglePage";
 import AboutPage from "./app/pages/about/AboutPage";
 import SingeAboutPage from "./app/pages/about/SingleAboutPage";
 import SingleScienePage from "./app/pages/science/SingleScienePage";
