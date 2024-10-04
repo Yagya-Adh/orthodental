@@ -34,43 +34,47 @@ const Events = () => {
         </button>
       </div>{" "}
       <div className="py-3 bg-white pb-10">
-        {datas?.map((data) => (
-          <div className="relative" key={data.id}>
-            <div className="flex items-center">
-              <h1 className=" text-sm me-3 p-3 text-nowrap">{data.months}</h1>
-              <div className="border border-light-black30 w-[88%]"></div>
-            </div>
-            <div className=" flex items-center">
-              <div className="text-center p-2">
-                <h5 className="mx-3 text-sm">{formattedDay} </h5>
-                <h2 className="font-bold text-xl">{12}</h2>
+        <div className="py-3 px-10 mx-auto max-w-screen-2xl">
+          {datas?.map((data) => (
+            <div className="relative" key={data.id}>
+              <div className="flex items-center">
+                <h1 className=" text-sm me-3 p-3 text-nowrap">{data.months}</h1>
+                <div className="border border-light-black30 w-[88%]"></div>
               </div>
-              <div className="flex flex-col justify-center">
-                <h2 className="text-sm">
-                  {formattedDateTime} {"-"} {formattedDateTime}
-                </h2>
-                <div className="grid grid-cols-2 gap-10 p-4 items-center px-10">
-                  <div className="flex-col w-2/3">
-                    <p className="font-bold hover:underline ">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Nesciunt eos porro, aspernatur ratione, amet soluta,
-                      dolore eaque nemo aperiam molestiae commodi mollitia
-                      ipsum. Assumenda vero esse libero ea consequatur saepe.
-                    </p>
-                    <p className="text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Nesciunt eos porro, aspernatur ratione, amet soluta,
-                      dolore eaque nemo aperiam molestiae commodi mollitia
-                      ipsum. Assumenda vero esse libero ea consequatur saepe.
-                    </p>
-                  </div>
+              <div className=" flex items-center">
+                <div className="text-center p-2">
+                  <h5 className="mx-3 text-sm">{formattedDay} </h5>
+                  <h2 className="font-bold text-xl">{12}</h2>
+                </div>
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-sm">
+                    {formattedDateTime} {"-"} {formattedDateTime}
+                  </h2>
+                  <div className="grid grid-cols-2 gap-10 p-4 items-center px-10">
+                    <div className="flex-col w-2/3">
+                      <p className="font-bold hover:underline font-sans">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Nesciunt eos porro, aspernatur ratione, amet
+                        soluta, dolore eaque nemo aperiam molestiae commodi
+                        mollitia ipsum. Assumenda vero esse libero ea
+                        consequatur saepe.
+                      </p>
+                      <p className="text-sm font-sans">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Nesciunt eos porro, aspernatur ratione, amet
+                        soluta, dolore eaque nemo aperiam molestiae commodi
+                        mollitia ipsum. Assumenda vero esse libero ea
+                        consequatur saepe.
+                      </p>
+                    </div>
 
-                  <img src={logo} alt="imgs." className="scale-150" />
+                    <img src={logo} alt="imgs." className="scale-150" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
