@@ -13,10 +13,10 @@ const Shop = () => {
   return (
     <>
       <HeadBanner headingsTitle={"Shop"} headingSlug={""} />
-      <div className="grid grid-cols-4 gap-2 rounded-md ">
+      <div className="grid grid-cols-4 gap-2 max-w-screen-2xl mx-auto px-10 rounded-md">
         {shopData?.map((shopping) => (
           <div
-            className="flex flex-col rounded-md  bg-light-white10  relative"
+            className="flex flex-col rounded-md bg-light-white10 z-10"
             key={shopping.id}
           >
             <div className="relative overflow-hidden">
@@ -66,15 +66,9 @@ const Shop = () => {
           </div>
         ))}
       </div>
-
       <FindersCard background={"#E3E9ED"} />
     </>
   );
 };
 
 export default Shop;
-/* Suggest a product for our upcoming Mewing Shop!
-
-click here
-
-*/
